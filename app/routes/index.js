@@ -8,7 +8,12 @@ router.get('/', function(req, res, next) {
 
 /* GET Contact page*/
 router.get('/contact', function(req, res, next){
-	res.render('contact', {contact:"987765433234"})
+	res.render('contact', {contact:"987765433234"});
+});
+
+/* GET Test page*/
+router.get('/test',function(req, res, next){
+	res.render('test', {title:"this is my first nodejs page"});
 })
 
 module.exports = router;
